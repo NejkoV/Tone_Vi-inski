@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ture</title>
+
+<style>
+body{
+    margin:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:#1b1b1b;
+    font-family:Arial;
+}
+
+.container{
+    width:300px;
+    background:#ddd;
+    padding:15px;
+}
+
+.search{
+    display:block;
+    width:120px;
+    padding:8px;
+    border:none;
+    border-radius:20px;
+    margin:0 auto 30px;
+}
+
+.tour{
+    border:1px solid gray;
+    padding:10px;
+    margin-bottom:25px;
+    color:#999;
+}
+
+.row{
+    display:flex;
+    justify-content:space-between;
+    margin-top:8px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <input class="search" placeholder="Value">
+
+    <div class="tour">
+        <div>Pohod od semerih jezer</div>
+        <div class="row">
+            <span>Rating: 8.5</span>
+            <span>Medium</span>
+        </div>
+    </div>
+
+    <div class="tour">
+        <div>Od bohinja do sedmerih</div>
+        <div class="row">
+            <span>Rating: 6.2</span>
+            <span>Easy</span>
+        </div>
+    </div>
+
+    <div class="tour">
+        <div>DO triglavskih jezer</div>
+        <div class="row">
+            <span>Rating: 3.2</span>
+            <span>Easy</span>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

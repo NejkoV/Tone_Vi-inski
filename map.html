@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zemljevid</title>
+
+<style>
+body{
+    margin:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:#1b1b1b;
+    font-family:Arial;
+}
+
+.container{
+    background:#ddd;
+    padding:12px;
+}
+
+.controls{
+    margin-bottom:15px;
+}
+
+button{
+    background:#2f2f2f;
+    color:white;
+    border:none;
+    padding:10px 15px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.map{
+    width:190px;
+    height:260px;
+    border:1px solid #666;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:50px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="controls">
+        <button>Add Point</button>
+        <button>Remove point</button>
+    </div>
+
+    <div class="map">
+        🗺
+    </div>
+
+</div>
+
+</body>
+</html>
