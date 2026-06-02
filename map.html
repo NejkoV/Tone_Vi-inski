@@ -3,60 +3,76 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Zemljevid</title>
+<title>Zemljevid s sledenjem</title>
 
 <style>
 body{
     margin:0;
+    background:#1b1b1b;
     display:flex;
     justify-content:center;
     align-items:center;
     height:100vh;
-    background:#1b1b1b;
-    font-family:Arial;
+    font-family:Arial,sans-serif;
 }
 
 .container{
+    width:320px;
     background:#ddd;
-    padding:12px;
+    padding:20px;
 }
 
-.controls{
+.controls-top{
+    display:flex;
+    gap:10px;
     margin-bottom:15px;
+    flex-wrap:wrap;
 }
 
 button{
     background:#2f2f2f;
     color:white;
     border:none;
-    padding:10px 15px;
-    border-radius:5px;
+    border-radius:6px;
+    padding:10px 12px;
     cursor:pointer;
+    flex:1;
+    min-width:90px;
 }
 
 .map{
-    width:190px;
-    height:260px;
+    height:300px;
     border:1px solid #666;
     display:flex;
     justify-content:center;
     align-items:center;
     font-size:50px;
+    margin-bottom:15px;
+}
+
+.controls-bottom{
+    display:flex;
+    gap:10px;
 }
 </style>
 </head>
-
 <body>
 
 <div class="container">
 
-    <div class="controls">
+    <div class="controls-top">
         <button>Add Point</button>
-        <button>Remove point</button>
+        <button>Remove Point</button>
+        <button>Sledi moji lokaciji</button>
     </div>
 
     <div class="map">
         🗺
+    </div>
+
+    <div class="controls-bottom">
+        <button onclick="window.location.href='ture.html'">Seznam tur</button>
+        <button>Shrani vnešeno</button>
     </div>
 
 </div>

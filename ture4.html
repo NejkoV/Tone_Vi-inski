@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rate Us</title>
+
+<style>
+body{
+    margin:0;
+    background:#1b1b1b;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    font-family:Arial,sans-serif;
+}
+
+.container{
+    width:300px;
+    background:#ddd;
+    padding:20px;
+    text-align:center;
+}
+
+h3{
+    color:white;
+    margin-bottom:30px;
+    font-weight:normal;
+}
+
+.stars{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.star{
+    cursor:pointer;
+}
+
+.buttons{
+    display:flex;
+    justify-content:space-between;
+}
+
+.btn{
+    background:#2f2f2f;
+    color:white;
+    border:none;
+    border-radius:6px;
+    padding:12px 28px;
+    cursor:pointer;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <h3>RATE US</h3>
+
+    <div class="stars">
+        <span class="star">☆</span>
+        <span class="star">☆</span>
+        <span class="star">☆</span>
+        <span class="star">☆</span>
+        <span class="star">☆</span>
+    </div>
+
+    <div class="buttons">
+        <button class="btn" onclick="window.location.href='main.html'">
+        Ne želim
+    </button>
+        <button class="btn" onclick="window.location.href='main.html'">
+        shrani oceno
+    </button>
+    </div>
+
+</div>
+
+<script>
+const stars = document.querySelectorAll('.star');
+
+stars.forEach((star,index)=>{
+    star.addEventListener('click',()=>{
+
+        stars.forEach((s,i)=>{
+            s.textContent = i <= index ? '★' : '☆';
+        });
+
+    });
+});
+</script>
+
+</body>
+</html>
